@@ -1,0 +1,98 @@
+.new-post{
+   width: 100%;
+   max-width: 700px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 30px auto;
+   justify-content: center;
+   background-color: #ecf0f1;
+   border-radius: 20px;
+   padding: 2vw 4vw;
+}
+
+.new-post form{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.new-post h1{
+   font-size: 32px;
+}
+
+.new-post form p{
+   color: #7159c1;
+   margin: 8px;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.new-post form label{
+   font-weight: bold;
+   margin: 15px 0;
+   font-size: 20px;
+}
+
+.new-post form input{
+   padding: 12px 20px;
+   color: black;
+   border: 1px solid black;
+   font-size: 15px;
+}
+
+.new-post form input:focus{
+   border: 2px solid #7159c1;
+}
+
+.new-post form button{
+   margin: 22px 0;
+   padding: 8px 20px;
+   background-color: #7159c1;
+   color: white;
+   font-weight: bold;
+   border: 1px solid black;
+}
+
+.new-post form a{
+   color: #7159c1;
+   text-decoration: none;
+   padding: 10px 20px;
+   font-size: 18px;
+   transition: 0.2s;
+}
+
+.new-post form a:hover{
+   opacity: 0.6;
+   transition: 0.2s;
+}
+
+.new-post img{
+   width: 300px;
+   height: 200px;
+   margin: 15px 0 ;
+}
+
+.new-post input[type=file]{
+   border: 0;
+}
+.new-post input[type=file]:focus{
+   border: 0;
+}
+.new-post progress[value]{
+   background-color: #eee;
+   border-radius: 2px;
+   width: 300px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.new-post textarea{
+   min-height: 100px;
+   color: black;
+   font-family: Roboto;
+   font-size: 15px;
+}
+
+.new-post textarea:focus{
+   border: 2px solid #7159c1;
+}

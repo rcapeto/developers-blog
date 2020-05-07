@@ -1,0 +1,52 @@
+.dashboard{
+   width: 100%;
+   max-width: 700px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 30px auto;
+   justify-content: center;
+   background-color: #ecf0f1;
+   border-radius: 20px;
+   padding: 2vw 4vw;
+}
+.dashboard .logout{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.dashboard .logout button{
+   border: 1px solid #e74c3c;
+   padding: 5px 8px;
+   background: none;
+   border-radius: 20px;
+   margin-left: 5vw;
+   transition: 0.2s;
+
+}
+
+.dashboard .logout button:hover{
+   transition: 0.2s;
+   opacity: 0.7;
+}
+
+.dashboard p{
+   font-size: 15px;
+}
+
+.dashboard button{
+   border: none;
+   margin-top: 15px;
+   background-color: #7159c1;
+   color: white;
+   font-weight: bold;
+   padding: 10px 20px;
+   border-radius: 20px;
+   transition: 1s;
+}
+
+.dashboard button:hover{
+   filter: brightness(80%);
+   transition: 1s;
+}

@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Routes from './routes';
+import firebase from './firebase';
+import './global.css';
 
-function App() {
+export default function App() {
+  const [initialized, setInitialized] = useState(false);
+
+  firebase.isInitialized().then(information => {
+    setInitialized(information);
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    initialized !== false ? <Routes/> :  <h1 style={{
+      color:'#fff',
+      fontSize: '30px'
+  }}>Carregando...</h1>
   );
 }
-
-export default App;
